@@ -1,0 +1,9 @@
+{
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
+    "dev:frontend": "cd warmachine && npm run dev",
+    "dev:backend": "uvicorn api.graphql.index:app --reload",
+    "test": "cd warmachine && npm test"
+  }
+}
